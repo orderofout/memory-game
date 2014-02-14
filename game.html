@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Note there is no responsive meta tag here -->
+
+    <title>Non-responsive Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/non-responsive.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+
+  <body onload="GamePlay.init();">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Memory Game</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Idle</a></li>
+            <li class="active"><a href="/game.html">Game</a></li>
+            <li><a href="/leaderboard.html">Leaderboard</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Admin</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+		
+		<div class="row">
+			<div class="col-xs-8"></div>	
+			<div class="col-xs-4 text-right">
+				<span id="userName"><strong style="display:none;"></strong></span> |
+				<span id="userPoints" class="label label-default">0pts</span> | 
+				<span id="timeRemaining" class="label label-success">0:00s</span>
+			</div>
+			<div class="clearfix"></div>	
+			<hr/>
+		</div>
+		
+	  <div class="row">
+	  
+		  <div class="col-xs-1"></div>
+		  
+		  <div id="gameHolder" class="col-xs-10">
+			  
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+			</div>
+		
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+			</div>
+		
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+			</div>
+
+			  
+		  </div>
+		  
+		  <div class="col-xs-1"></div>
+		  
+	  </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+	<script src="js/lib/greensock-v12-js/src/uncompressed/TweenMax.js"></script>
+	<script src="js/lib/greensock-v12-js/src/uncompressed/plugins/CSSPlugin.js"></script>
+
+    <script src="js/lib/tock.js"></script>
+    <script src="js/database.js"></script>    
+    <script src="js/gamePlay.js"></script>
+  </body>
+</html>
