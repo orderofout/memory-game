@@ -17,4 +17,4 @@ Displays your results with other saved results
 
 Thats it. Nothing really fancy. I added a Gruntfile after the fact with some bower dependencies. Eventually I'd like to port this into phonegap and make it an actual game with a few extra features.
 
-Use it it you like, or don't. I don't care.
+Use it if you like, or don't. I don't care.
